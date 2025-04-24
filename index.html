@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1 class="title">SPLITTER</h1>
+    <div class="tip-calculator">
+        <div class="partOne">
+            <label for="">Bill</label>
+            <input type="number" class="input-bill-input" id="bill-input" placeholder="£">
+            <label for="">Select Tip %</label>
+            <div class="tip">
+                <button class="tips btn-5">5%</button>
+                <button class="tips btn-10">10%</button>
+                <button class="tips btn-15 active-tip">15%</button>
+                <button class="tips btn-25">25%</button>
+                <button class="tips btn-50">50%</button>
+                <div id="tip-custom"><input type="number" class="tip-custom" placeholder="Custom"></div>
+            </div>
+            <div class="peopleLabel">
+            <label for="">Number of People</label>
+            <label for="" class="error">Can't be zero</label>
+            </div>
+            <input type="number" class="input-people-input" placeholder="👤"></label>
+        </div>
+
+        <div class="result">
+            <div class="tip-amount">
+                <div class="text">
+                    <p>Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="tip-amount">£0.00</div>
+            </div>
+            <div class="total">
+                <div class="text">
+                    <p>Total</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="total-amount">£0.00</div>
+            </div>
+            <div class="reset">RESET</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
