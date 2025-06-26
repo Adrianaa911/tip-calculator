@@ -11,11 +11,13 @@ let tipValue = 0;
 let billValue = 0;
 let peopleValue = 1;
 
+
 //validate bill input
 billInput.addEventListener("input", function () {
     billValue = parseFloat(billInput.value) || 0;
     calculateTip();
 });
+
 
 tipButtons.forEach((button) => {
     button.addEventListener("click", function () {
